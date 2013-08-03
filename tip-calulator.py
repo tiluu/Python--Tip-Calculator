@@ -1,7 +1,8 @@
  #! /usr/bin/env python 
-cost = float(raw_input('What is the cost of meal?'))
-tax = float(raw_input('What is the tax?')) 
-tip = float(raw_input('How much is tip?')) 
+import sys
+cost = float(sys.argv[1]) 
+tax = float(sys.argv[2])
+tip = float(sys.argv[3])
 tip_percentage = tip/100
 tax_percentage = tax/100
 
@@ -11,7 +12,7 @@ meal_tip = cost*tip_percentage
 total = cost+meal_tax+meal_tip
 
 print ('The base cost of you meal was $%s') % '{:.2f}'.format(cost)
-print ('You need to pay $%s for tax.') % '{:.2f}'.format(tax)
+print ('You need to pay $%s for tax.') % '{:.2f}'.format(meal_tax)
 print ('Tipping at a rate of 15%%, you should leave $%s for a tip.') % '{:.2f}'.format(meal_tip)
 print ('The grand total of your meal is $%s') % '{:.2f}'.format(total)
 
