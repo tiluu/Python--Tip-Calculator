@@ -19,4 +19,3 @@ print ('You need to pay ${} for tax.').format(tax)
 print ('Tipping at a rate of 15%, you should leave ${} for a tip.').format(tip)
 print ('The grand total of your meal is ${}').format(total)
 
-#the % sign, is it an
