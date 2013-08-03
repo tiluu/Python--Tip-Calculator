@@ -1,7 +1,8 @@
  #! /usr/bin/env python 
-cost = 20.00 #{':.2f'}.format(20.00)
-tax = 3.00/100 #{':.2f'}.format(3.00)
-tip = 15.00/100  #{':.2f'}.format(3.45)
+cost = 20.00 
+tax = 3.00/100 
+tip = 15.00/100 
+
 tax_value = tax*cost
 meal_tax = cost+tax
 meal_tip = cost*tip
