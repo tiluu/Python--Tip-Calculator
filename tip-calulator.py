@@ -14,10 +14,10 @@ if not options.cost:
 if not options.tax:
     parser.error('You did\'t enter the tax of meal')
     
-tip_valaue = options.tip/100
+tip_value = options.tip/100
 tax_value = options.tax/100
 
-tax_value = options.tax*option.cost
+tax_value = options.tax*options.cost
 meal_tax = options.cost+tax_value
 meal_tip = options.cost*tip_value
 total = options.cost+meal_tax+meal_tip
